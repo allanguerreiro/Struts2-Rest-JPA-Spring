@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--Defines a suffix for action class. Conventionally action class for REST web service has
+    Controller suffix and this suffix will not be included in URL.-->
+    <constant name="struts.convention.action.suffix" value="Controller"/>
+    <!--mapAllMatches can be true or false.-->
+    <constant name="struts.convention.action.mapAllMatches" value="true"/>
+    <!--To support REST web service, struts 2 uses rest-default as parent package.-->
+    <constant name="struts.convention.default.parent.package" value="rest-default"/>
+    <!--Locator is the last word of the package within which controller action class resides. In our class, it is rest.-->
+    <constant name="struts.convention.package.locators" value="controller"/>
+</struts>
